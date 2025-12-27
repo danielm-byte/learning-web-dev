@@ -1,0 +1,156 @@
+*{
+  font-family: sans-serif;
+   background-color: whitesmoke;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 50px;
+}
+#nav-bar ul {
+  display: flex;  
+  list-style: none; 
+  margin: 0;      
+  padding: 0;      
+  gap:30px;       
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+#header {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+#form {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+input {
+  font-size: 17px;
+  padding: 5px;
+}
+#submit{
+  background-color: orange;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.feature {
+  margin: 50px auto;
+  padding: 60px;
+  max-width: 900px;
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  gap:120px;     
+}
+
+.feature .text {
+  display: flex;
+  flex-direction: column; 
+}
+
+.feature .text h2,
+.feature .text p {
+  margin: 0; 
+}
+i{
+  color: orange;
+}
+.video-container {
+  text-align: center; 
+}
+.price-card {
+  border: 1px solid black;
+  width: 250px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.pricing{
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+ justify-content: center;
+}
+.price-header {
+  background-color: #d3d3d3; 
+  font-weight: bold;
+  padding: 15px 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+
+.price-amount {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px 0 10px 0;
+}
+
+.price-features {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0 0 20px 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.price-features li {
+  margin-bottom: 8px;
+}
+
+.select-btn {
+  background-color: #f4c000; 
+  border: none;
+  padding: 12px 0;
+  margin: 0 40px 20px 40px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.select-btn:hover {
+  background-color: #d1a800; 
+}
+footer {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-end;   
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 20px;
+ 
+}
+.a-footer {
+  background-color: gray;
+  display: flex; gap:15px;   
+}
+
+footer a {
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  background-color: gray;
+  color: white;
+  margin: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;         
+  overflow-x: hidden;  
+  box-sizing: border-box;
+}
