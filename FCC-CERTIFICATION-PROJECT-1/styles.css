@@ -1,0 +1,173 @@
+body{
+  background-image: url(https://images.pexels.com/photos/1871508/pexels-photo-1871508.jpeg);
+background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.card {
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 200px;
+  height: 300px;
+ display: flex;
+   justify-content: space-between;
+   background-color: whitesmoke;
+   
+   
+}
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+
+}
+.left {
+align-self: flex-start;
+color: black;
+display: flex;
+flex-direction: column;
+
+
+
+}
+.middle {
+align-self: center;
+display: flex;
+flex-direction: column;
+}
+.right {
+align-self: flex-end;
+color: red;
+}
+.background{
+  object-fit: cover;
+
+}
+.left-a:after{
+  display: flex;
+  content: "♠";
+  
+}
+/* Card A */
+.left-a{
+  margin: 5px;
+  margin-top: 5px;
+  font-size: 30px;
+  
+}
+.left-b {
+  margin: -5px;
+  margin-top: -15px;
+  display: grid;
+  align-content: end; 
+  justify-content: end;
+  
+  width: 200px;
+  height: 150px;
+  font-size: 30px;
+}
+
+.left-b::before {
+  content: " ♠";
+ transform: rotate(180deg)
+}
+
+.left-b::after {
+  content: "A";
+  transform: rotate(180deg)
+}
+.left-c{
+  font-size: 80px;
+  display: grid;
+  place-items: center;
+}
+/* Card 2*/
+
+.middle-a:after{
+  display: flex;
+  content: "♠";
+  
+}
+.middle-a{
+  width: 180px;
+  height: 40px;
+  font-size: 30px;
+  
+}
+.middle-b {
+
+  display: grid;
+  align-content: end; 
+  justify-content: end;
+  font-size: 30px;
+}
+
+.middle-b::before {
+  content: " ♣";
+ transform: rotate(180deg)
+}
+
+.middle-b::after {
+  content: "2";
+  transform: rotate(180deg)
+}
+.middle-c{
+  font-size: 80px;
+  display: grid;
+  place-items: center;
+}
+.middle-c2{
+  font-size: 80px;
+  display: grid;
+  place-items: center;
+  transform: rotate(180deg);
+}
+/* Card 3*/
+
+.right-a:after{
+  display: grid;
+  content: "♥";
+  
+}
+.right-a{
+
+  width: 190px;
+  height: 0px;
+  font-size: 30px;
+ 
+  
+}
+.right-b {
+width: 180px;
+  height: 20px;
+  display: grid;
+  align-content: end; 
+  justify-content: end;
+  font-size: 30px;
+  
+}
+
+.right-b::before {
+  content: " ♥";
+ transform: rotate(180deg)
+}
+
+.right-b::after {
+  content: "3";
+  transform: rotate(180deg)
+}
+.right-c{
+  font-size: 80px;
+  display: grid;
+  place-items: center;
+  
+}
+.right-c2{
+  font-size: 80px;
+  display: grid;
+  place-items: center;
+  transform: rotate(180deg);
+  
+}

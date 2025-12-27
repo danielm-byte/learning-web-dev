@@ -1,0 +1,90 @@
+tr[class="read"]{
+  background: linear-gradient(green 10%,green 10%,white 80%);
+  height: 90px;
+  
+}
+tr[class="to-read"]{
+  background: linear-gradient(gold 20%,yellow 80%);
+   height: 90px;
+}
+tr[class="in-progress"]{
+  background: linear-gradient(grey 10%,grey 10%,white 80%);
+   height: 90px;
+}
+span{
+  display: inline-block;
+  
+}
+tr[class="to-read"] span[class="status"]{
+  border: 1px solid black;
+   background: linear-gradient(grey 10%,orange 10%,yellow 80%)
+   
+  }
+  tr[class="read"] span[class="status"]{
+     border: 1px solid black;
+     background: linear-gradient(white 20%,green)
+  }
+  tr[class="in-progress"] span[class="status"]{
+     border: 1px solid black;
+     background: linear-gradient(white 20%,grey)
+  }
+  span[class="status"], span[class^="rate"]{
+    height: 20px;
+    width: 60px;
+    padding: 23px;
+
+
+  }
+span[class^="rate"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100px;
+  gap: 10px;
+  
+}
+span[class^="rate"] > span {
+   margin: 1px;
+  flex: 1;
+width: 20px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+span[class~="one"] span:first-of-type {
+background: linear-gradient(red, yellow)
+}
+span[class~="two"] span:nth-of-type(-n+2) {
+background: linear-gradient(red, yellow)
+}
+span[class~="three"] span{
+  background: linear-gradient(red, yellow)
+}
+*{
+  text-align: center;
+  align-content: center;
+   font-family: sans-serif;
+}
+h1{
+ color: whitesmoke;
+  font-weight: bold;
+  text-shadow: 4px 4px 17px;
+  background: radial-gradient(circle, black, white);
+}
+table {
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;       
+  max-width: 800px; 
+}
+th{
+ 
+  font-weight: bold;
+  background: linear-gradient(white ,rgba(124, 121, 121, 0.5),  white )
+}
+body{
+  background-color: rgba(179, 174, 174, 0.815);
+ 
+}
