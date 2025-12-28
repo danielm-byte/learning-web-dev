@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /*overflow-x: hidden;*/
+
+}
+#navbar{
+  position: fixed;
+  top: 0;
+width: 100%;
+  padding: 20px 50px 20px 1px;
+  gap: 30px;
+ background-color: crimson;
+  border: 2px solid;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a{
+ text-decoration: none;
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+ 
+}
+#welcome-section{
+  padding: 150px 1px 150px 1px;
+   background: linear-gradient(gray,black);
+   color: white;
+   text-align: center;
+}
+#welcome-section h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+#welcome-section p{
+  color: rgba(255,0,0,0.7);
+  font-size: 25px;
+}
+#contact{
+   padding: 150px 1px 150px 1px;
+   background: linear-gradient(gray,black);
+   color: white;
+   text-align: center;
+   border-bottom: 5px solid red;
+}
+#contact h2{
+ font-weight: bold;
+  font-size: 40px;
+}
+#contact p{
+ font-weight: normal;
+  font-size: 20px;
+}
+#contact a{
+margin: 10px;
+ color: white;
+}
+footer{
+   padding: 10px;
+   background: linear-gradient(gray,black);
+   color: white;
+   display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+#project-section{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 10px 1px 10px 1px;
+   background-color: rgba(0,0,255,0.6);
+   margin: 0;
+   
+}
+.project-tile {
+  background-color: navy;
+  padding-bottom: 50px;
+  height: 300px;
+  width: 400px;
+  margin: 0 auto; 
+}
+.project-tile a{
+  color: white;
+    text-align: center;
+  text-decoration: none;
+}
+.project-tile p{
+  color: white;
+  margin: 0; 
+  font-size: 20px;
+  font-weight: bold;
+}
+#project-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.button-container {
+  grid-column: 1 / -1; 
+  display: flex;
+  justify-content: center; 
+  margin: 20px 0; 
+}
+#seemore {
+  position: relative;  
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: navy;
+  cursor: pointer;
+  border: none;
+}
+#seemore a{
+  text-decoration: none;
+  color: white;
+}
+#seemore:hover,
+#seemore a:hover{
+  background-color: red;
+ transition: transform 0.3s ease, color 0.3s ease; 
+}
+#seemore::after {
+  content: '>';
+  display: inline-block; 
+  margin-left: 5px;   
+  transition: transform 0.3s ease; 
+}
+#seemore:hover::after{
+  transform: translateX(5px);
+ 
+}
+@media (max-width: 700px;){
+  html, body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+}
+#contact a i {
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+#contact a:hover i {
+  transform: translateY(10px); 
+  color: red;  
+}

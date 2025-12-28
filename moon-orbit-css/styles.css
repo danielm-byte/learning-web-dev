@@ -1,0 +1,78 @@
+body{
+  background-image: url("https://img.freepik.com/free-vector/christmas-snowy-background_1048-9078.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: fill;
+  background-repeat: repeat;
+  background-position: center;
+  backdrop-filter: blur(0.7px);
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space{
+  width:200px;
+   height:200px;
+   position:relative;
+     background-image: url("https://img.freepik.com/free-vector/christmas-snowy-background_1048-9078.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: fill;
+  background-repeat: repeat;
+  background-position: center;
+  filter: blur(0.7px);
+   background-color: black;
+
+}
+.earth {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+ background-image: url("https://thumbs.dreamstime.com/b/planet-earth-transparent-background-d-render-isolated-additional-file-high-quality-texture-realistic-70169166.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: blue;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.orbit{
+  width:200px;
+   height:200px;
+   position:absolute;
+    transform: translate(-50%, -50%);
+  animation:orbit 5s linear infinite;
+}
+.moon{
+  background-image: url("https://p1.hiclipart.com/preview/441/938/390/moon-full-moon-illustration-png-clipart.jpg");
+   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+   background-color: white;
+  border-radius: 50%;
+  width:30px;
+   height:30px;
+   position:absolute;
+    top: 0;
+left: 50%;
+transform: translate(-50%)
+}
+@keyframes orbit{
+  0%{
+transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100%{
+transform : rotate(360deg) translate(-50%, -50%);
+  }
+}
+@media (min-width: 800px){
+  .earth{
+    width: 200px;
+    height: 200px;
+  }
+  .moon{
+     width: 70px;
+    height: 70px;
+  };
+}
