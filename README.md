@@ -1,9 +1,9 @@
-# Learning Web Development 🚀
+# Learning Web Development 
 
 This repository contains my **HTML and CSS practice projects**
 from **freeCodeCamp**.
 
-✅ I have **completed the Responsive Web Design section** of my web development journey and earned the certification.
+ I have **completed the Responsive Web Design section** of my web development journey and earned the certification.
 
 ## 🎓 Certification
 
